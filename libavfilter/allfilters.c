@@ -399,8 +399,6 @@ extern AVFilter ff_vf_zmq;
 extern AVFilter ff_vf_zoompan;
 extern AVFilter ff_vf_zscale;
 
-extern AVFilter ff_vf_loadlib;
-
 extern AVFilter ff_vsrc_allrgb;
 extern AVFilter ff_vsrc_allyuv;
 extern AVFilter ff_vsrc_cellauto;
@@ -423,6 +421,7 @@ extern AVFilter ff_vsrc_testsrc2;
 extern AVFilter ff_vsrc_yuvtestsrc;
 
 extern AVFilter ff_vsink_nullsink;
+extern AVFilter ff_vsink_callai;
 
 /* multimedia filters */
 extern AVFilter ff_avf_abitscope;

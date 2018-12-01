@@ -145,6 +145,6 @@ AVFilter ff_vf_loadlib = {
     .uninit        = loadlib_uninit,
     .query_formats = query_formats,
     .inputs        = loadlib_inputs,
-    .outputs       = loadlib_outputs,
+//    .outputs       = loadlib_outputs,
     .flags         = AVFILTER_FLAG_SUPPORT_TIMELINE_GENERIC,
 };

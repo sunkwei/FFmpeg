@@ -422,8 +422,6 @@ OBJS-$(CONFIG_ZMQ_FILTER)                    += f_zmq.o
 OBJS-$(CONFIG_ZOOMPAN_FILTER)                += vf_zoompan.o
 OBJS-$(CONFIG_ZSCALE_FILTER)                 += vf_zscale.o
 
-OBJS-$(CONFIG_LOADLIB_FILTER)				 += vf_loadlib.o
-
 OBJS-$(CONFIG_ALLRGB_FILTER)                 += vsrc_testsrc.o
 OBJS-$(CONFIG_ALLYUV_FILTER)                 += vsrc_testsrc.o
 OBJS-$(CONFIG_CELLAUTO_FILTER)               += vsrc_cellauto.o
@@ -446,6 +444,7 @@ OBJS-$(CONFIG_TESTSRC2_FILTER)               += vsrc_testsrc.o
 OBJS-$(CONFIG_YUVTESTSRC_FILTER)             += vsrc_testsrc.o
 
 OBJS-$(CONFIG_NULLSINK_FILTER)               += vsink_nullsink.o
+OBJS-$(CONFIG_CALLAI_FILTER)                 += vsink_callai.o
 
 # multimedia filters
 OBJS-$(CONFIG_ABITSCOPE_FILTER)              += avf_abitscope.o
