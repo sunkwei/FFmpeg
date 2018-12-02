@@ -1196,6 +1196,9 @@ static int http_connect(URLContext *h, const char *path, const char *local_path,
         s->user_agent = av_strdup(s->user_agent_deprecated);
     }
 #endif
+
+    av_log(s, AV_LOG_INFO, "post:%d, headers:%s\n", post, s->headers);
+
     /* set default headers if needed */
     if (!has_header(s->headers, "\r\nUser-Agent: "))
         len += av_strlcatf(headers + len, sizeof(headers) - len,
