@@ -444,7 +444,7 @@ OBJS-$(CONFIG_TESTSRC2_FILTER)               += vsrc_testsrc.o
 OBJS-$(CONFIG_YUVTESTSRC_FILTER)             += vsrc_testsrc.o
 
 OBJS-$(CONFIG_NULLSINK_FILTER)               += vsink_nullsink.o
-OBJS-$(CONFIG_CALLAI_FILTER)                 += vsink_callai.o
+OBJS-$(CONFIG_CALLAI_FILTER)                 += vsink_callai.o cJSON.o
 
 # multimedia filters
 OBJS-$(CONFIG_ABITSCOPE_FILTER)              += avf_abitscope.o

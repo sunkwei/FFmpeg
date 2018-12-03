@@ -1126,8 +1126,6 @@ static int http_read_header(URLContext *h, int *new_location)
         if ((err = http_get_line(s, line, sizeof(line))) < 0)
             return err;
 
-        av_log(h, AV_LOG_TRACE, "header='%s'\n", line);
-
         err = process_line(h, line, s->line_count, new_location);
         if (err < 0)
             return err;
@@ -1196,8 +1194,6 @@ static int http_connect(URLContext *h, const char *path, const char *local_path,
         s->user_agent = av_strdup(s->user_agent_deprecated);
     }
 #endif
-
-    av_log(s, AV_LOG_INFO, "post:%d, headers:%s\n", post, s->headers);
 
     /* set default headers if needed */
     if (!has_header(s->headers, "\r\nUser-Agent: "))
@@ -1312,6 +1308,7 @@ static int http_connect(URLContext *h, const char *path, const char *local_path,
          * we've still to send the POST data, but the code calling this
          * function will check http_code after we return. */
         s->http_code = 200;
+
         err = 0;
         goto done;
     }

@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "sstream": "c",
-        "loadlib.h": "c"
-    }
+        "loadlib.h": "c",
+        "avio.h": "c"
+    },
+    "python.pythonPath": "/usr/bin/python"
 }
